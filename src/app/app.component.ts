@@ -7,15 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
 
   produtos: Array<any>;
 
   constructor(private apiService: ApiService){}
 
   ngOnInit() {
-    this.ListProducts();
-    console.log(this.produtos);
+    this.ListProducts();    
   }
 
   ListProducts(){
